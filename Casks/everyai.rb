@@ -1,6 +1,6 @@
 cask "everyai" do
-  version "0.1.0-alpha.1"
-  sha256 "114dc199c084139ea82e6c38d549d0ac5d99a4bfc018ae5bed584ce5fed0ba81"
+  version "0.1.0-alpha.2"
+  sha256 "d57abaf3ee84bb7275b3015cee180d3f506341fcbc80421a661b0fa1f0ac41c0"
 
   url "https://github.com/xuckless/everyai-mono/releases/download/v#{version}/EveryAI-#{version}.dmg"
   name "EveryAI"
@@ -12,6 +12,8 @@ cask "everyai" do
     strategy :github_releases
   end
 
+  # The app updates itself (Sparkle); brew upgrade --greedy still works.
+  auto_updates true
   depends_on macos: ">= :sequoia"
 
   app "EveryAI.app"
