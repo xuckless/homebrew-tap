@@ -1,6 +1,6 @@
 cask "everyai" do
-  version "0.1.0-alpha.3"
-  sha256 "9db57cc613ccfc9bf768f21d78f375b97b1691a3d21ce1ac1c28b7f8f564839e"
+  version "0.1.0-alpha.5"
+  sha256 "2757eb83b722229d31e2d32bb1a0a293c01751c69f55b8100f62d96c294e9889"
 
   url "https://github.com/xuckless/everyai-mono/releases/download/v#{version}/EveryAI-#{version}.dmg"
   name "EveryAI"
